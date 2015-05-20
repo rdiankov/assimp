@@ -220,7 +220,6 @@ if(CMAKE_CPACK_COMMAND AND UNIX AND ASSIMP_OPT_BUILD_PACKAGES)
   set(CPACK_DEBIAN_PACKAGE_SUGGESTS)
   set(CPACK_DEBIAN_PACKAGE_NAME assimp)
   set(CPACK_DEBIAN_PACKAGE_REMOVE_SOURCE_FILES contrib/cppunit-1.12.1 contrib/cppunit_note.txt contrib/zlib workspaces test doc obj samples packaging)
-  set(CPACK_DEBIAN_PACKAGE_SOURCE_COPY svn export --force)
   set(CPACK_DEBIAN_CHANGELOG)
   execute_process(COMMAND lsb_release -is
     OUTPUT_VARIABLE _lsb_distribution OUTPUT_STRIP_TRAILING_WHITESPACE
